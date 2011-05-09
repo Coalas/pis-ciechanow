@@ -1,0 +1,15 @@
+/* Red (default colour)
+-------------------------------------------------------------- */   
+body			        { background:url(red/bg.png) repeat-x top #CDE8EE;}
+
+/* Typography */
+h1				        { color: #fff; }
+h2			        	{ color: #E44600; }
+p						{ color: #666666; }
+
+/* Feed rollovers */
+a.rsslight 				{ background-image:url(red/rss.png); background-position:0; display:block; height:35px; width:106px; float:left; cursor: pointer; }
+a.rsslight:hover		{ background-position:106px; text-decoration:none; }
+
+a.emaillight 			{ background-image:url(red/email.png); background-position:0; display:block; height:35px; width:116px; float:left; margin-left:25px; cursor: pointer; }
+a.emaillight:hover 		{ background-position:116px; text-decoration:none; }

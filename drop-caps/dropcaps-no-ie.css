@@ -1,0 +1,11 @@
+span.cap span{
+display:block;
+height:0pt;
+position:relative;
+right:0.06em;
+top:-1.06em;
+}
+span.cap:before{
+content:attr(title);
+color:#666;
+}

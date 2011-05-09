@@ -1,0 +1,11 @@
+@import 'dropcaps-no-ie.css' screen;
+
+span.cap {
+float:left;
+font-size:300%;
+font-weight:bold;
+line-height:1em;
+margin-bottom:-0.4em;
+margin-right:0.05em;
+position:relative;
+}

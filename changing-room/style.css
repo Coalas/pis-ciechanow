@@ -1,0 +1,46 @@
+/*  
+Theme Name: Changing Room 1.0
+Theme URI: http://wordprezzie.com/changing-room/
+Author: Wordprezzie
+Author URI: http://wordprezzie.com
+Description: You get dressed. We promise not to peek.
+*/
+
+/* Setup
+-------------------------------------------------------------- */
+body                    { font-family: geneva, arial, sans-serif; }
+
+/* Blueprint overrides
+-------------------------------------------------------------- */
+body                    { margin:0; }
+.container              { background-color: transparent;}
+
+#down, #up {cursor: pointer;}  
+/* Links
+-------------------------------------------------------------- */
+a                       { color: #fff; text-decoration: none; outline:none; }
+a:hover                 { color: #fff; text-decoration: none;}
+a:visited               { color: #fff; text-decoration: none;}
+a:visited:hover         { color: #fff; text-decoration: none;}
+
+/* Typography
+-------------------------------------------------------------- */
+p						{ font-size: 1.6em; }
+h1, h2, h3, h4          { font-weight: 100; }
+h1                      { line-height:1.1em; font-size: 1.6em; margin-top:21px;}
+h2						{ margin-bottom: 0.4em; }
+.admin p				{ margin-top:23px; font-size:1.1em; text-align: right;}
+
+/* Containers
+-------------------------------------------------------------- */
+.sign					{ margin-top: 90px; }
+.changing				{ margin-top: 150px; }
+.split					{ margin-top: 200px; }
+.arrowd					{ margin-top: 590px; }
+
+/* Floats
+-------------------------------------------------------------- */
+.left                   { float: left; }
+.right                  { float: right; }
+.clear                  { clear: both; }
+.cleardiv               { clear: both; height:0; }

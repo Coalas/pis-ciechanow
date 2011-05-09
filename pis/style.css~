@@ -1,0 +1,271 @@
+/*
+Theme Name: corporatezags
+Theme URI: http://www.themelayouts.com/
+Description: Designed by <a href="http://www.themelayouts.com">ThemeLayouts</a>.<br> This work is licensed <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 License.</a> This means you may use it and make any changes you like. However, credit links must remain on footer for legal use.
+Version: 1
+Author: ThemeLayouts/DreamTemplate
+Author URI: http://www.dreamtemplate.com/
+*/
+
+body { background: url(images/bg_top.jpg) repeat-x top; font:12px "Trebuchet MS", Arial, Helvetica, sans-serif; padding:0; margin:0; color:#000000; }
+
+html { padding:0; margin:0; }
+
+a { text-decoration:none; color:#bd3500; border:0; }
+a:hover { text-decoration:underline; color:#bd3500; border:0; } 
+a:focus { outline:none;}
+
+.clr { clear:both; }
+
+h1, h2, h3, h4 {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; }
+
+img { padding:0; margin:0; border:none; text-align:center; }
+hr1 { border-left:0 solid #000000; border-right:0 solid #000000; border-top:0 dotted #000000; border-bottom:1px solid #000000; height :1px; }
+hr { border-left:0 solid #7f262e; border-right:0 solid #7f262e; border-top:0 dotted #7f262e; border-bottom:1px solid #7f262e; height :1px; }
+
+form { padding:0; margin:0; }
+input { font-family:'Verdana'; color:#282b31; font-size:11px; }
+textarea { font-family:'Verdana'; color:#282b31; font-size:11px; }
+select { font-family:'Verdana'; color:#282b31; font-size:11px; }
+
+/* Header +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#bgcontainer { margin:0 auto; padding:0; width:950px;}
+
+/**/ * html .Header {height:177px; } /* */ 
+.Header { width:950px; margin:0; padding:0; height:177px;}
+
+.Logo {
+	height:141px;
+	width:897px;
+	margin-left:26px;
+	background-image: url(images/layout_04.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.Header .LogoText h1 { letter-spacing:-1px; line-height:40px; text-align:left; padding:0; margin:0; text-transform:uppercase; font:normal 24px Georgia, "Times New Roman", Times, serif; color:#000000;}
+.Header .LogoText a { color:#000; text-decoration:none; }
+.Header .LogoText a:visited { color:#000; text-decoration:none; }
+.Header .LogoText a:hover { color:#000; text-decoration:none; }
+.Header .Desc {	color:#000000; font:normal 11px Georgia, "Times New Roman", Times, serif; padding:0; margin:0; text-align: left;}
+
+/* Search ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/**/ * html .Search  { } /**/ 
+.Search { padding:0 30px 0 0; float:right; width:300px;}
+.Search form { margin:0; padding:40px 15px 0 0; }
+.Search input { color:#fff; }
+.Search  input.keyword { border:1px solid #929393; width:170px; color:#000; background:#FFF; padding:3px 5px; } 
+.Search  input.search { margin:0; padding:4px 10px; background:#454545; font:normal 12px "Times New Roman", Times, serif; color:#fff; border:0; }
+
+/* Menu +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.Menu { padding:0; margin:0; height:36px; width:950px; float:left;}
+.Menu ul { list-style:none; margin:0; padding:0 0 0 10px;}
+.Menu ul li { padding:8px 0; margin:0 auto; float:left; line-height:18px;}
+.Menu ul li a {
+	padding:8px;
+	outline:0;
+	background:none;
+	color:#dcd8c0;
+	line-height:18px;
+	text-transform:none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+}
+.Menu ul li a:hover {color:#fff; background: #cc0000;}
+
+
+/* Syndicate +++++++++++++++++++++++*/
+.Syn { width:250px; float:right; padding:0 10px 0 0; height:22px; background:url(images/rss.gif) top left no-repeat;}
+.Syn ul { margin:0; padding:0;}
+.Syn li { margin:0 5px; padding:3px 5px 0 30px; list-style-type:none; color:#454545; font:normal 12px Tahoma, Arial; float:left;}
+.Syn li a {color:#cc0000;}
+.Syn li a:visited {color:#cc0000;}
+.Syn li a:hover {color:#cc0000;}
+
+/* SimpleText +++++++++++++++++++++++*/
+.SimpleText { margin:0 auto; padding:0; height:160px;}
+.SimpleText ul { margin:0; padding:5px; list-style:none;}
+.SimpleText ul li { font:normal 60px Georgia, "Times New Roman", Times, serif; color:#2e2e2e; padding:5px 0 5px 30px; margin:5px 0; background:url(images/l_bg.jpg) left;}
+
+/* Container +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.CON { width:950px; padding:0; margin:1px 0 0 0; }
+
+/* Side Central +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.SC { width:600px; margin:0; padding:10px; float:left;}
+
+.SC p { color:#000000;}
+/* Post +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.Post {padding:5px; margin:0; width:590px;}
+.Post img {}
+.pagetitle { letter-spacing:0px; color:#6e6e6e; font:bold 24px "Times New Roman", Times, serif; margin:0; padding:5px 0 5px 30px;}
+
+.PostHead { padding:0; margin:0 0 10px 0; background:url(images/pg2.gif) repeat-x bottom;}
+.PostHead h2 { letter-spacing:0px; color:#2e2e2e; font:normal 24px Georgia, "Times New Roman", Times, serif; margin:0; padding:0 0 5px 10px;}
+.PostHead h2 a { color:#2e2e2e; text-decoration:none; }
+.PostHead h2 a:visited { color:#2e2e2e; text-decoration:none; }
+.PostHead h2 a:hover { color:#2e2e2e; text-decoration:underline; }
+
+/**/ * html .PostTime { } /**/ 
+.PostTime { padding:0 2px 5px 2px; margin:0; color:#e30000; background:url(images/calendar_bg.gif) center top no-repeat; width:60px; height:55px; float:left; text-align:center;}
+.PostTime .day { color:#fff; font:bold 16px Georgia, "Times New Roman", Times, serif; }
+.PostTime .month { color:#fff; font: bold 14px Georgia, "Times New Roman", Times, serif;}
+.PostTime .year { font-size:11px; }
+
+.PostDate { padding:5px 10px 5px 50px; border-top:1px solid #000; border-bottom:1px solid #000; margin:0 0 0 10px;}
+.PostHead small {padding:0; margin:0; font-size:11px; font-weight:normal; }
+.PostAuthor { color:#a3a3a3;}
+.PostCat { color:#000; }
+.PostCat a { color:#cc0000; text-decoration:underline; }
+.PostCat a:hover { color:#cc0000; text-decoration:none; }
+
+.PostContent { padding:0; color:#000; font:normal 12px Tahoma, Arial; text-align:justify; }
+.PostContent p { font-size:12px; color:#000; padding:0 10px;line-height:150%}
+.PostContent p strong { }
+.PostContent img { margin:0; padding:0; }
+.PostContent ol { padding:10px 0 10px 25px; margin:0; }
+.PostContent ol li { padding:2px 0 2px 0 ; font-size:12px; line-height:15px; color:#fff; }
+.PostContent ul { padding:5px 0; margin:0; }
+.PostContent ul li { padding:2px 0 2px 15px; list-style-type:none; font-size:11px; line-height:15px; color:#fff; }
+.PostContent blockquote { padding:10px; margin:0; color:#ec9700; background:#000; }
+.PostContent blockquote p { font-size:12px; padding:0; margin:0; line-height:15px; }
+.PostContent blockquote li { padding:2px 0 2px 15px; list-style-type:none; font-size:12px; line-height:15px; }
+.PostContent blockquote a { color:#ec9700; }
+.PostContent blockquote a:visited { color:#ec9700; }
+.PostContent blockquote a:hover { color:#ec9700; text-decoration:underline; }
+
+/**/ * html .PostContent p img { } /* */ 
+.PostContent p img { max-width:300px; }
+.PostContent img { margin:0 10px; padding:0; float:left; }
+
+.PostCom { padding:5px 0; }
+.PostCom ul { padding:0; margin:0; list-style:none; }
+.PostCom li { padding:4px 0 4px 20px; margin:0 5px 0 0; } 
+.PostCom li a { font-weight:normal; text-decoration:underline;  } 
+.PostCom li a:hover { font-weight:normal; text-decoration:none;  }
+
+.PostCom li.Com {}
+.PostCom .Tags { padding-left:0; }
+
+/* Note ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.Note { padding:0px 10px; color:#795942; }
+.Note li { padding:3px 0 3px 15px; margin:0; list-style-type:none; font-size:12px; }
+
+/* TrackbackList ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.TrackList { background:#ffffff; padding:15px; margin-top:20px; position:relative; }
+.TrackListTop { background:#ffffff; position:absolute; top:0; left:0; width:455px; height:10px; }
+.TrackList h3 { font-size:14px; font-weight:bold; margin:0 0 5px 0; padding:0 0 5px 0; color:#000000; letter-spacing:-1px; border-bottom:dashed 1px #beb4c1; }
+.TrackList ul { padding:0; margin:0; }
+.TrackList li { padding:0 0 0 10px; margin:0; list-style-type:none; font-size:11px; }
+.TrackList li a { color:#cc3366; }
+
+/* Navigation - PlugIn +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.Nav { font-size:11px; padding:10px 0 ; color:#666; font-family:'Verdana'; }
+.Nav a { padding:1px 6px 1px 4px; border-right:solid 1px #666; font-size:11px; }
+.Nav a:visited { padding:1px 6px 1px 4px; border-right:solid 1px #666; }
+.Nav a:hover { padding:1px 6px 1px 4px; border-right:solid 1px #666; text-decoration:none; }
+.Nav span { padding:1px 6px 1px 4px; color:#666; border-right:solid 1px #666; }
+.Nav .on { padding:1px 6px 1px 4px; border-right:solid 1px #666; font-size:11px; color:#000000; }
+
+/* Comments ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.Comments { margin:20px 10px 0 10px; position:relative; }
+.Comments h3 { font-size:16px; letter-spacing:-1px; margin:0 0 5px 0; padding:10px 0; color:#000000; }
+
+/* Comments List  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.List ol { padding:0; margin:0; }
+.List li { position:relative; padding:5px 0; margin:10px 0; list-style-type:none; }
+
+/**/ * html .List .LGrav { right:30px; } /* */ 
+.List .LGrav { position:absolute; right:0; top:10px; }
+.List .LGrav img { border:solid 1px #ccc; padding:2px; background:#fff; }
+.List .LUsr { margin:0; padding:0; font-size:11px; line-height:12px; color:#999; }
+.List .LUsr a { color:#000000; text-decoration:none; }
+.List .LUsr strong { font:bold 16px "Trebuchet MS", sans-serif; letter-spacing:-1px; color:#000000; }
+.List .LUsr strong a { color:#cc0000; text-decoration:none; }
+.List .LCon { margin:10px 0 0 0 ; padding:0; font-size:12px; line-height:16px; border-top:solid 1px #ccc; }
+.List .LCon p { margin:0; padding:5px 0 ; font-size:12px; line-height:16px; }
+.List .Author { background:#fff; }
+
+/* Comments Form ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.Form .Email { }
+
+.Form {  padding:10px; position:relative; margin:0; font-family:'Verdana'; }
+.Form form { margin:0; padding:0; }
+.Form a { text-decoration:underline; }
+.Form p { padding:0 0 2px 0 ; margin:0; color:#666; }
+.Form p small strong { font-weight:bold; color:#000000; }
+.Form p small { font-size:11px; display:block; padding:6px 0; color:#000000; }
+.Form .TextField { color:#003366; background:#e9f8ff; border:solid 1px #d5e7f0; padding:6px 6px 6px 30px; font-size:12px; display:block; }
+.Form .TextArea { color:#003366; background:#e9f8ff; border:solid 1px #d5e7f0; padding:6px; font-size:12px; }
+.Form input.SubmitComment { margin-top:4px; }
+.Form input.SubmitComment:hover { margin-top:4px; }
+.Form input.SubmitCommentIE { width:57px; height:29px; background:url(images/SubmitComment.png) no-repeat 0 -29px; margin-top:4px; }
+
+/* Side Right +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.SR { width:310px; float:right; padding:10px; margin:0;}
+
+/* Side Right Right and Left +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.SRL { width:310px; margin:10px auto; padding:0; }
+.SRR { width:310px; margin:10px auto; padding:0; }
+
+.SRL h2, .SRR h2 { background:#c8c8c8; font:normal 24px Georgia, "Times New Roman", Times, serif; color:#FFF; padding:10px 20px; margin:0;}
+.SRL ul { margin:3px 0; border-top:1px solid #e0e0e0; list-style:none; padding:0; width:200px; }
+.SRL li { background:#ebebeb; padding:4px 10px; margin:0; border-bottom:1px solid #d8d8d8; border-top:1px solid #FFF; width:290px;}
+.SRL a { color:#4e4e4e; text-decoration:none; }
+.SRL a:visited { color:#4e4e4e; }
+.SRL a:hover { color:#4e4e4e; text-decoration:underline; }
+
+.archives ul { width:310px;}
+.archives ul li { float:left;}
+
+/* Flickrrss ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.widget_flickrrss { width:310px; margin:0; padding:5px 0;}
+.widget_flickrrss h2 { background:#c8c8c8; font:normal 24px Georgia, "Times New Roman", Times, serif; color:#636363; padding:10px 20px; margin:0;}
+.widget_flickrrss ul { margin:0; padding:0 0 0 5px; text-align:center; }
+.widget_flickrrss li { float:left; list-style:none; padding:5px 5px; margin:0px; }
+.widget_flickrrss li a img { background:#fff; padding:0; border:1px solid #cebea9; width:65px; }
+.widget_flickrrss li a:visited img { background:#fff; padding:0; border:1px solid #cebea9; }
+.widget_flickrrss li a:hover img { padding:0; border:1px solid #660000; }
+
+/* Comment ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.Recent { width:310px; margin:0; padding:0;}
+.Recent h2 { letter-spacing:0px; padding:10px 5px; margin:0 5px 0 0; font:bold 14px Georgia, "Times New Roman", Times, serif; color:#FFF; background:#c8c8c8; float:left;}
+.Recent h2.active { background:#cc0000; color:#FFF;}
+.TabContent { padding:0; background:#ebebeb; margin:3px 0; border:1px solid #e0e0e0;}
+.TabContent ul { padding:0; list-style:none; margin:0;}
+.TabContent ul li { padding:7px 10px; margin:0; border-bottom:1px solid #d8d8d8; border-top:1px solid #FFF; color:#4e4e4e; font:bold 11px Georgia, "Times New Roman", Times, serif;}
+.TabContent ul li a { color:#4e4e4e; font:normal 11px Georgia, "Times New Roman", Times, serif; }
+
+/* Banners ADs ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.banner { width:470px; margin:0 auto; padding:10px 0;}
+.banner p { margin:0; padding:0; }
+
+/**/ * html .FBG  {  } /**/ 	
+/* Footer ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.FBG { margin:0; padding:0; background:#323232 url(images/bg_foot.jpg) top repeat-x;}
+.FBG_blog { width:910px; margin:0 auto; padding:20px; background:#424242 url(images/bg_blog_f.jpg) repeat-x top;}
+.FBG_blog h2 { letter-spacing:0px; padding:10px; margin:0; font:bold 24px Georgia, "Times New Roman", Times, serif; color:#FEFEFE; background:#181818;}
+.FBG_blog p { background:#5a5a5a; padding:10px; margin:10px 0 0 0; color:#c8c8c8; font:normal 11px Georgia, "Times New Roman", Times, serif;}
+.FBG_blog ul { padding:0; list-style:none; margin:0; background:#5a5a5a;}
+.FBG_blog ul li { padding:7px 10px 7px 20px; margin:0 10px; border-bottom:1px solid #424242; color:#c8c8c8; font:bold 11px Georgia, "Times New Roman", Times, serif; background:url(images/bg_li_recent.gif) no-repeat left;}
+.FBG_blog ul li a { color:#c8c8c8; font:normal 11px Georgia, "Times New Roman", Times, serif; }
+
+/* Recent ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.Footer { padding:0; margin:0; text-align:center; background:#181818;}
+.Footer p { line-height:14px; color:#9d9d9d; padding:15px 0; margin:0; font:normal 11px Tahoma, Arial;}
+.Footer a { color:#9d9d9d; text-decoration:underline;}
+
+ .topbox{
+margin-top: 20px;
+margin-bottom: 20px;
+            
+}
+.toptext{
+
+    float:right;
+    width:600px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ce0000;
+    font-style: italic;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>jSnow Example</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script type="text/javascript" src="jsnow.js"></script>
+
+<style type="text/css">
+html,body {background:#000;position:relative;padding:0;margin:0;}
+#body {background:#333;margin:0 auto;width:700px;color:#ccc;padding:0 20px 10px 20px;}
+a {color:#ff0;}
+#example {color:#fff;}
+code.b {font-weight:bold;color:#f00;}
+</style>
+<script type="text/javascript">
+var jSnow;
+var jSnowToggle = $("<button/>");
+jSnowToggle.html("START snowing");
+jSnowToggle.toggle(snow,stopSnow);
+function snow()
+{
+	$(this).text("STOP snowing");
+	jSnow = $().jSnow();
+};
+function stopSnow()
+{
+	$(this).text("START snowing");
+	jSnow.kill();
+};
+
+
+$(function() {
+	$("#jSnowToggleContainer").append(jSnowToggle);
+});
+</script>
+</head>
+
+<body>
+<div id="body">
+    <div id="example">
+    	<a href="http://www.dummwiam.com/jSnow" title="visit the official site of jSnow">Falling Snow Example B for jSnow v1.2.</a>
+
+	<div id="jSnowToggleContainer" style="text-align:center;"></div>
+    <p>In this example we create (via jScript) a button that gives the user the option to turn on and off the jSnow plugin. For the implementation I use the toggle event of jQuery, I hope you understand it.</p>
+	<p>Code used in this example of jSnow:</p>
+    <p style="color:#fff;font-family:'Courier New', Courier, monospace;line-height:20px;">
+    &lt;script type=&quot;text/javascript&quot;&gt;      <br />
+      var jSnow;      <br />
+      var jSnowToggle = $(&quot;&lt;button/&gt;&quot;);<br />
+      &nbsp;&nbsp;jSnowToggle.html(&quot;START snowing&quot;);<br />
+      jSnowToggle.toggle(snow,stopSnow);<br />
+      function snow()<br />
+      {<br />
+      &nbsp;&nbsp;&nbsp;$(this).text(&quot;STOP snowing&quot;);<br />
+      &nbsp;&nbsp;&nbsp;jSnow = $().jSnow();<br />
+      }<br />
+      function stopSnow()<br />
+      {<br />
+      &nbsp;&nbsp;&nbsp;$(this).text(&quot;START snowing&quot;);<br />
+      &nbsp;&nbsp;&nbsp;jSnow.kill();<br />
+      }<br />
+
+	$(function() {<br />
+      <span style="color:#fff;">&nbsp;&nbsp;&nbsp;</span>$(&quot;#jSnowToggleContainer&quot;).append(jSnowToggle);<br />
+      });<br />
+      &lt;/script&gt;
+    </p>
+    </div>
+    <hr />
+<p>
+<p>jSnow, a jQuery Plugin</p>
+<p>v 1.1
+  All Browsers Supported.IE6+, Opera, Safari, Firefox &amp; Chrome
+  Licensed under GPL licenses.</p>
+<p>Copyright (C) 2009 Nikos "DuMmWiaM" Kontis, dummwiam@gmail.com  </p>
+<p>http://www.DuMmWiaM.com/jSnow</p>
+<hr />
+<p>
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+</p>
+<hr />
+<p>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</p>
+
+</p>
+</div>
+</body>
+</html>

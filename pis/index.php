@@ -1,0 +1,72 @@
+<?php get_header(); ?>
+<!-- Container -->
+
+<div class="CON">
+
+</div>
+<div class="clr"></div>
+  <!-- Start SC -->
+  <div class="SC">
+    <?php if (have_posts()) : ?>
+    <?php while (have_posts()) : the_post(); ?>
+    <div class="Post" id="post-<?php the_ID(); ?>">
+      <div class="PostHead">
+        <div class="PostTime"> <strong class="month">
+          <?php the_time('M') ?>
+          </strong><br />
+          <strong class="day">
+          <?php the_time('j') ?>
+          </strong> </div>
+        <h2><a title="Link to <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark">
+          <?php the_title(); ?>
+          </a></h2>
+          <div class="clr"></div>
+        <div class="PostDate">Wpisano w  <small class="PostCat">
+          <?php the_category(', ') ?>
+          </small> <small class="PostAuthor"> 
+	  - <?php the_author() ?>
+          </small></div>
+        <div class="clr"></div>
+      </div>
+      <div class="PostContent">
+        <?php the_content('Czytaj dalej... &raquo;'); ?>
+      </div>
+      <div class="clr"></div>
+      <div class="PostCom">
+        <ul>
+          <li class="Com">
+            <?php comments_popup_link('0 Komentarzy', '1 Komentarz', '% Komentarzy','comments-link',''); ?>
+          </li>
+          <?php if (function_exists('the_tags')) { ?>
+          <?php the_tags('<li class="Tags">Tagi: ', ', ', '</li>'); ?>
+          <?php } ?>
+        </ul>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <!--<?php trackback_rdf(); ?>-->
+    <div class="clr"></div>
+    <div class="banner">
+      <p><img src="<?php bloginfo('template_url'); ?>/images/flower.png"  alt="banners" /></p>
+    </div>
+    <?php endwhile; ?>
+    <!-- Start Nav -->
+    <?php if (function_exists('wp_pagenavi')) { ?>
+    <?php wp_pagenavi(); ?>
+    <?php } ?>
+    <!-- End Nav -->
+    <?php else : ?>
+    <h2>
+      <?php _e('Not Found'); ?>
+    </h2>
+    <p>
+      <?php _e('Sorry, no posts matched your criteria.'); ?>
+    </p>
+    <?php endif; ?>
+  </div>
+  <!-- End SC -->
+  <?php get_sidebar(); ?>
+  <div class="clr"></div>
+</div>
+<!-- Container -->
+<?php get_footer(); ?>

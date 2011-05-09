@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>jSnow Example</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script type="text/javascript" src="jsnow.js"></script>
+
+<style type="text/css">
+html,body {background:#000;position:relative;padding:0;margin:0;}
+#body {background:#333;margin:0 auto;width:700px;color:#ccc;padding:0 20px 10px 20px;}
+a {color:#ff0;}
+#example {color:#fff;}
+code.b {font-weight:bold;color:#f00;}
+</style>
+<script type="text/javascript">
+$(function() {
+$().jSnow({flakes:15,flakeMaxSize:30,flakeMinSize:20,flakeCode:["&diams;","ghost1.gif","ghost2.gif","ghost3.gif","ghost4.png"],flakeColor:["#f00","#00f","#fff"],interval:30});
+});
+</script>
+</head>
+
+<body>
+<div id="body">
+    <div id="example">
+    	<a href="http://www.dummwiam.com/jSnow" title="visit the official site of jSnow">Falling Snow Example B for jSnow v1.2.</a>
+
+    <p>In this example we set a number of parameters to demonstrate the veratility of jSnow! Look at the code and I will explain every parameter in detail afterwards.</p>
+	<p>Code used in this example of jSnow:</p>
+    <p style="color:#fff;"><code>
+    $(function() {<br />
+		$().jSnow({flakes:15, flakeMaxSize:30, flakeMinSize:20, flakeCode:[&quot;&amp;diams;&quot;,&quot;ghost1.gif&quot;,&quot;ghost2.gif&quot;,&quot;ghost3.gif&quot;,&quot;ghost4.png&quot;], flakeColor:[&quot;#f00&quot;,&quot;#00f&quot;,&quot;#fff&quot;],interval:30});<br />
+        </code>
+	});
+    </p>
+    
+    <ul>
+   	  <li><code class="b">flakes:15</code> I've set the number of snowflakes to 15, instead of 30 which is the default.</li>
+		<li><code class="b">flakeMaxSize:30</code> Maximum size of flakes in case we use HTML character code instead of images. This parameter will be ignored in case you have set images for snowflakes.</li>
+		<li><code class="b">flakeMinSize:20</code> Minimum size of flakes in case we use HTML character code instead of images. This parameter will be ignored in case you have set images for snowflakes.</li>
+        <li><code class="b">flakeCode:[&quot;&amp;diams;&quot;,&quot;ghost1.gif&quot;,&quot;ghost2.gif&quot;,&quot;ghost3.gif&quot;,&quot;ghost4.png&quot;]</code>
+        Instead of using the default HTML code for flakes (&amp;bull; which results in &bull;) I have an array of 5 items, 4 images and 1 html code. jSnow will select randomly from this selection. Three things are important here. A) ONLY <strong>gif</strong> and <strong>png</strong> images are suported. B) Set the full path to image (either relative or full path) in this example images are in the same directory as the html file so no need to set a path. C) <code>flakeMaxSize</code>, <code>flakeMinSize</code> and <code>flakeColor</code> parameters are only applied for HTML elements that you have set in flakeCode. So if you've used just images, don't bother to set these 3 parameters since jSnow cannot effect the color of the image :). Image support was added in version 1.1 of jSnow.</li>
+        <li><code  class="b">flakeColor:[&quot;#f00&quot;,&quot;#00f&quot;,&quot;#fff&quot;]</code> A random selection of array of colors to be applied to HTML code snow flakes (ignored in images).</li>
+        <li><code  class="b">interval:30</code> Control the interval loops of the animation. The default value is 50 (milliseconds) which means that the animation loop will run every 50ms (20 times per seconds, since 1 sec = 1000 milliseconds). Since we set it in a lower value the animation loop will run more times in a second so it will be faster. I suggest not changing this parameter unless you fully understand intervals and browser performance. This feature was added in version 1.1 of jSnow</li>
+    </ul>
+	</div>
+<hr />
+<p>
+<p>jSnow, a jQuery Plugin</p>
+<p>v 1.1
+  All Browsers Supported.IE6+, Opera, Safari, Firefox &amp; Chrome
+  Licensed under GPL licenses.</p>
+<p>Copyright (C) 2009 Nikos "DuMmWiaM" Kontis, dummwiam@gmail.com  </p>
+<p>http://www.DuMmWiaM.com/jSnow</p>
+<hr />
+<p>
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+</p>
+<hr />
+<p>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</p>
+
+</p>
+</div>
+</body>
+</html>
